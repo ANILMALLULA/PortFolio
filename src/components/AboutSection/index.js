@@ -33,7 +33,7 @@ const educationData = [
   {
     id: 0,
     qualification: "Graduation",
-    qualificationSource: "B.Tech (Electronicd and Communication Engineering)",
+    qualificationSource: "B.Tech (Electronics and Communication Engineering)",
     percentage: "80%",
   },
   {
@@ -80,9 +80,9 @@ class AboutSection extends Component {
       <div>
         <h1 className='about-section-heading'>Career Objective:</h1>
         <p className='about-section-description'>
-          To work in a firm with a professional work driven environment where I
-          can utilize and apply my knowledge, skills which would enable me as a
-          professional to grow while fulfilling organizational goals.
+          To secure a position in an organisation where I can utilize and apply
+          my skills and knowledge, which would enable me as a professional to
+          grow while fulfilling organizational goals.
         </p>
         <div className='education-and-skills-container'>
           <div className='education-details-container'>

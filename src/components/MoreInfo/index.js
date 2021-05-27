@@ -9,6 +9,7 @@ function MoreInfo() {
         <ul className='list-items'>
           <li>Long Drives</li>
           <li>Listening to Music</li>
+          <li>Playing and love to watch cricket</li>
           <li>Spending valuable time with friends and family.</li>
         </ul>
       </div>
@@ -30,7 +31,7 @@ function MoreInfo() {
             Won First prize in Project Expo event of GVIT college fest 2018.
           </li>
           <li>
-            Won First prize in Project Expo event of GVIT college fest 2018.
+            Won Second prize in Project Expo of ANDHRA UNIVERSITY fest in 2018.
           </li>
           <li>
             Won Third prize in Archetype event of NIPUNA 2K17 fest of our
