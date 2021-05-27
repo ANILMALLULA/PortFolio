@@ -1,79 +1,87 @@
-import {Component} from 'react'
+import { Component } from "react";
 
-import AboutSection from '../AboutSection'
-import ContactSection from '../ContactSection'
-import HomeSection from '../HomeSection'
-import NavBar from '../NavBar'
-import ProjectsSection from '../ProjectsSection'
-import SocialMediaSection from '../SocialMediaSection'
+import AboutSection from "../AboutSection";
+import ContactSection from "../ContactSection";
+import HomeSection from "../HomeSection";
+import NavBar from "../NavBar";
+import ProjectsSection from "../ProjectsSection";
+import SocialMediaSection from "../SocialMediaSection";
+import MoreInfo from "../MoreInfo";
 
-import './index.css'
+import "./index.css";
 
 const navBarItems = [
   {
     id: 0,
-    iconUrl: 'https://assets.ccbp.in/frontend/react-js/home-img.png',
-    name: 'HOME',
+    iconUrl: "https://assets.ccbp.in/frontend/react-js/home-img.png",
+    name: "HOME",
   },
   {
     id: 1,
-    iconUrl: 'https://assets.ccbp.in/frontend/react-js/about-img.png',
-    name: 'ABOUT',
+    iconUrl: "https://assets.ccbp.in/frontend/react-js/about-img.png",
+    name: "ABOUT",
   },
   {
     id: 2,
-    iconUrl: 'https://assets.ccbp.in/frontend/react-js/projects-img.png',
-    name: 'PROJECTS',
+    iconUrl: "https://assets.ccbp.in/frontend/react-js/projects-img.png",
+    name: "WORK EXPERIENCE",
   },
   {
     id: 3,
-    iconUrl: 'https://assets.ccbp.in/frontend/react-js/person-img.png',
-    name: 'CONTACT',
+    iconUrl: "https://assets.ccbp.in/frontend/react-js/about-img.png",
+    name: "MORE INFO",
   },
-]
+  {
+    id: 4,
+    iconUrl: "https://assets.ccbp.in/frontend/react-js/person-img.png",
+    name: "CONTACT",
+  },
+];
 class Portfolio extends Component {
   state = {
     activeNavBarItem: navBarItems[0].name,
-  }
+  };
 
   renderComponent = () => {
-    const {activeNavBarItem} = this.state
+    const { activeNavBarItem } = this.state;
 
     switch (activeNavBarItem) {
       case navBarItems[1].name:
-        return <AboutSection />
+        return <AboutSection />;
       case navBarItems[2].name:
-        return <ProjectsSection />
+        return <ProjectsSection />;
       case navBarItems[3].name:
-        return <ContactSection />
+        return <MoreInfo />;
+      case navBarItems[4].name:
+        return <ContactSection />;
       default:
-        return <HomeSection />
+        return <HomeSection />;
     }
-  }
+  };
 
-  changeActiveNavBarItem = activeNavBarItem => {
+  changeActiveNavBarItem = (activeNavBarItem) => {
     this.setState({
       activeNavBarItem,
-    })
-  }
+    });
+  };
 
   render() {
-    const {activeNavBarItem} = this.state
+    const { activeNavBarItem } = this.state;
 
     return (
-      <div className="portfolio-container">
+      <div className='portfolio-container'>
         <NavBar
           activeNavBarItem={activeNavBarItem}
           changeActiveNavBarItem={this.changeActiveNavBarItem}
           navBarItems={navBarItems}
         />
-        <div className="portfolio-body">
-          <div className="active-section">{this.renderComponent()}</div>
+        <div className='portfolio-body'>
+          <div className='active-section'>{this.renderComponent()}</div>
           <SocialMediaSection />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Portfolio
+export default Portfolio;

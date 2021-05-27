@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 768px) {
   .active-section {
-    height: 74vh;
+    min-height: 80vh;
     margin-left: 32px;
     padding: 32px;
   }

@@ -1,21 +1,27 @@
-import './index.css'
+import "./index.css";
+import Location from "../../Images/location.JPG";
 
 const ContactSection = () => (
   <div>
-    <h1 className="contact-section-heading">My Contact</h1>
-    <img
-      className="location-image"
-      src="https://assets.ccbp.in/frontend/react-js/location-img.png"
-      alt="location-map"
-    />
-    <p className="contact-section-description">
-      If you like my projects and interested to do work with me. Please
-      contact...
+    <h1 className='contact-section-heading'>My Contact</h1>
+    <img className='location-image' src={Location} alt='location-map' />
+    <p className='contact-section-description'>
+      I have been looking for a new Oppurtunity where I can utilize my skills
+      and learn new techs and trends in the market. If you like my profile,
+      Please do contact me. Thank you!!
     </p>
-    <p className="contact-details">Please Contact:</p>
-    <p className="mobile-number">9123456789</p>
-    <p className="email">sophie.millers@gmail.com</p>
+    <p className='contact-details'>Please Contact:</p>
+    <p className='mobile-number'>9010433267</p>
+    <p
+      className='email'
+      onClick={(e) => {
+        window.location = "mailto:mallula9010@gmail.com";
+        e.preventDefault();
+      }}
+    >
+      mallula9010@gmail.com
+    </p>
   </div>
-)
+);
 
-export default ContactSection
+export default ContactSection;

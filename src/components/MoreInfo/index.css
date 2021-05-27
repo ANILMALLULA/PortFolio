@@ -1,0 +1,26 @@
+.projects-heading {
+  color: #0f172a;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-heading {
+    font-size: 25px;
+  }
+}
+
+.projects-heading1 {
+  color: #0f172a;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-items {
+  color: rgb(31, 12, 12);
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 500;
+}

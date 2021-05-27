@@ -7,35 +7,58 @@
 }
 
 .username {
+  color: white;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.surname {
   color: #0f172a;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
   .username {
-    font-size: 32px;
+    font-size: 33px;
+  }
+  .surname {
+    font-size: 30px;
   }
 }
 
 .designation {
   color: #1e293b;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
+  padding: 15px;
+  background-color: #ffffff35;
+  border: 1px solid #ffffff;
+  border-radius: 9px;
 }
 
 @media screen and (min-width: 768px) {
   .designation {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 .experience-description {
   text-align: center;
   color: #334155;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.description1 {
+  text-align: center;
+  color: rgb(37, 21, 21);
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   max-width: 500px;
@@ -50,7 +73,7 @@
 .view-resume-btn {
   color: #f43f5e;
   background-color: #f8fafc;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-weight: 500;
   border: none;

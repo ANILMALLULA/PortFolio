@@ -1,17 +1,20 @@
-import './index.css'
+import "./index.css";
 
 const HomeSection = () => (
-  <div className="home-section">
-    <h1 className="username">Sophie Millers</h1>
-    <p className="designation">Full Stack Developer</p>
-    <p className="experience-description">
-      Experienced in MongoDB, Express, ReactJS and Node.js, Bootstrap, HTML,
-      CSS, SQL and Python.
-    </p>
-    <button type="button" className="view-resume-btn">
-      View Resume
-    </button>
-  </div>
-)
+  <div className='home-section'>
+    <h1 className='username'>
+      Anil Kumar <span className='surname'>Mallula</span>
+    </h1>
+    <p className='designation'>Front End Developer</p>
 
-export default HomeSection
+    <p className='experience-description'>
+      Experienced in ReactJS and JavaScript, HTML, CSS, SQL and Python.
+    </p>
+
+    <p className='description1'>
+      Currently working as Project Engineer at Wipro Technologies, Limited.
+    </p>
+  </div>
+);
+
+export default HomeSection;

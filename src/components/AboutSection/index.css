@@ -1,19 +1,20 @@
 .about-section-heading {
   color: #0f172a;
-  font-family: 'Roboto';
-  font-size: 24px;
+  font-family: "Roboto";
+  font-size: 20px;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
   .about-section-heading {
-    font-size: 32px;
+    font-size: 22px;
+    font-weight: bold;
   }
 }
 
 .about-section-description {
-  color: #1e293b;
-  font-family: 'Roboto';
+  color: #08101b;
+  font-family: "Roboto";
   font-size: 12px;
 }
 
@@ -47,9 +48,9 @@
 
 .education-and-skills-heading {
   color: #0f172a;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,33 +60,38 @@
 }
 
 .education-details-list {
-  list-style-image: url('https://assets.ccbp.in/frontend/react-js/list-icon-img.png');
-  padding-left: 16px;
+  list-style-image: url("https://assets.ccbp.in/frontend/react-js/list-icon-img.png");
+  padding-left: 26px;
 }
 
 .qualification {
-  color: #334155;
-  font-family: 'Roboto';
+  color: #05132e;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
   .qualification {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .education-place {
-  color: #475569;
-  font-family: 'Roboto';
+  color: #05132e;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
 }
 
+.percentage {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 @media screen and (min-width: 768px) {
   .education-place {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -98,7 +104,7 @@
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
   padding: 0px;
@@ -107,6 +113,7 @@
 @media screen and (min-width: 768px) {
   .skills-list {
     flex-direction: column;
+    justify-content: space-around;
     align-items: start;
     max-height: 250px;
   }
@@ -125,9 +132,9 @@
 }
 
 .skill {
-  color: #ec4899;
+  color: #94034c;
   background-color: #ffffff60;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 600;
   border: none;

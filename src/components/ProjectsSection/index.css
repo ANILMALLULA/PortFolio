@@ -1,58 +1,54 @@
+.companyDetails {
+  display: flex;
+  flex-direction: row;
+}
+
 .projects-heading {
   color: #0f172a;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.companyDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.companyname {
+  color: rgb(5, 3, 3);
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0;
+}
+
+.experience {
+  font-size: 14px;
+  font-weight: 700;
+  color: aliceblue;
+  align-self: center;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
   .projects-heading {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 
-.projects-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .projects-list {
-    max-width: 750px;
-    justify-content: flex-start;
-  }
-}
-
-.project-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 16px;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .project-item {
-    width: 40%;
-  }
-}
-
-.project-image {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .project-image {
-    height: 185px;
-  }
-}
-
-.project-name {
-  text-align: center;
+.projects-heading1 {
   color: #0f172a;
-  font-family: 'Roboto';
-  font-size: 16px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-items {
+  color: rgb(31, 12, 12);
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 500;
 }
