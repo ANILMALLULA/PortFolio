@@ -1,6 +1,7 @@
 {
   "name": "18-glass-portfolio-design",
   "private": true,
+  "homepage": "http://ANILMALLULA.github.io/PortFolio",
   "version": "1.0.0",
   "engines": {
     "node": "^10.13 || 12 || 14 || 15",
@@ -19,6 +20,7 @@
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
+    "gh-pages": "^3.2.0",
     "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
@@ -31,7 +33,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
     "format": "prettier --write \"./src\"",
-    "run-all": "npm-run-all --parallel test lint:fix"
+    "run-all": "npm-run-all --parallel test lint:fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "*.js": [
